@@ -4,10 +4,10 @@ import Logo from '../../assets/img/logo.png';
 
 function Header(props) {
     return (
-        <header>
+        <header className="headerComponent" data-test="headerComponent">
             <div className="wrapper container-fluid">
-            <div className="logo">
-                <img src={Logo} alt="logo"/>
+            <div className="logo" data-component="logo">
+                <img src={Logo} alt="logo" data-component="logoImg" className="logoImg"/>
             </div>
             </div>
            
